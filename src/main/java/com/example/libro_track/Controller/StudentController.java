@@ -36,4 +36,8 @@ public class StudentController {
 
         return studentService.getStudent(id);
     }
+    @GetMapping("/t")
+    public List<Student> searchStudents(){
+        return studentService.getAllStudents();
+    }
 }
